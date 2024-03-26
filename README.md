@@ -24,6 +24,6 @@ and produce novel behaviours, capturing the essence of the given sentence; our b
 
 <p align="center" dir="auto">
 	<a href="https://youtu.be/xSbMqwq0Mp8" rel="nofollow">
-		<img align="center" width="400px" src=""/>
+		<img align="center" width="400px" src="https://github.com/MarilenaLemonari/LexiCrowd/blob/main/Misc/thumbnail.png"/>
 	</a>
 </p>
