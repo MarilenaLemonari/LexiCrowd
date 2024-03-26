@@ -1,7 +1,3 @@
-# cd C:\PROJECTS\CrowdsInSentences
-# .\.venv\Scripts\activate
-# cd .\CIS_Python\Analysis
-
 # IMPORTS:
 from preprocess_user_data import *
 import torch
@@ -20,7 +16,7 @@ def normalize_weights(z):
         return softmax_probs
 
 # LOAD TRAINED MODEL:
-c_encoder_path = "C:\PROJECTS\CrowdsInSentences\CIS_Python\Pretrained\Saved_Models"
+c_encoder_path = "...\CIS_Python\Pretrained\Saved_Models"
 model_3.load_state_dict(torch.load(f'{c_encoder_path}\\VAEv1.pth'))
 
 # LOAD DATA:

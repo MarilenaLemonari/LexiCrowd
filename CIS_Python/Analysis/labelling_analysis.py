@@ -1,7 +1,3 @@
-# cd C:\PROJECTS\CrowdsInSentences
-# .\.venv\Scripts\activate
-# cd .\CIS_Python\Analysis
-
 # IMPORTS:
 from preprocess_user_data import *
 import torch
@@ -20,7 +16,7 @@ def normalize_weights(z):
         return softmax_probs
 
 # LOAD TRAINED MODEL:
-c_encoder_path = "C:\PROJECTS\CrowdsInSentences\CIS_Python\Pretrained\Saved_Models"
+c_encoder_path = "...\CIS_Python\Pretrained\Saved_Models"
 model_3.load_state_dict(torch.load(f'{c_encoder_path}\\VAEv1.pth'))
 
 # LOAD DATA:
@@ -80,8 +76,6 @@ def apply_model(input_ids, idx):
     return z.numpy(), predictions.numpy(), group_id
 
 # ANALYSE:
-# z_mean_ex = torch.tensor([[0.1382, 0.6853, 0.1765],[0.3662, 0.4246, 0.2093],[0.3662, 0.4246, 0.2093],[0.3662, 0.4246, 0.2093],[0.3662, 0.4246, 0.2093],
-#                           [0.3662, 0.4246, 0.2093],[0.3662, 0.4246, 0.2093],[0.3662, 0.4246, 0.2093],[0.3662, 0.4246, 0.2093]])
 def plot_z_mean(z_mean, predictions, group_id):
     fig = plt.figure()
     ax = fig.add_subplot(111, projection='3d')
@@ -161,7 +155,6 @@ for run in tqdm(range(model_runs)):
             means_dict[str(idx)].append(np.mean(z_mean, axis = 0))
             stds_dict[str(idx)].append(np.std(z_mean, axis = 0))
             pred_dict[str(idx)].append(prediction)
-        # print("idx: ", idx, " Number of Points: ", z_mean.shape[0], "with (mean, std) of z_mean: ",np.mean(z_mean, axis = 0), np.std(z_mean, axis = 0)) 
     z_m = np.vstack(z_means)
     preds = np.hstack(predictions)
     run_means.append(z_m)

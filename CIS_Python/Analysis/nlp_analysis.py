@@ -10,9 +10,8 @@ sys.path.append('..\Pretrained')
 from variationalmodel import *
 
 # LOAD TRAINED MODEL & SIMILARITY MODEL:
-c_encoder_path = "C:\PROJECTS\CrowdsInSentences\CIS_Python\Pretrained\Saved_Models"
+c_encoder_path = "...\CIS_Python\Pretrained\Saved_Models"
 model_3.load_state_dict(torch.load(f'{c_encoder_path}\\VAEv1.pth'))
-# sim_model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
 
 # LOAD DATA:
 # text, _ = load_data()

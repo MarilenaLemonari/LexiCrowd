@@ -13,9 +13,7 @@
 import torch.nn as nn
 from transformers import T5Tokenizer, T5ForConditionalGeneration
 import torch.nn.functional as F
-from tqdm import tqdm
 import torch
-import torch.optim as optim
 from data_preprocessing import *
 
 # LOAD PRE-TRAINED MODELS
@@ -44,11 +42,9 @@ class Net(nn.Module):
         x = F.relu(self.fc(x))
         mean = self.fc_mean(x)
         var = self.fc_var(x)
-        # x = F.softmax(self.linear(x))
-        return mean, var, embeddings #TODO: max_len 67
+        return mean, var, embeddings
         
 model_2 = Net(model,max_seq_len)
-# means, var = net(input_ids)
 
 for name, param in model_2.named_parameters():
   if param.requires_grad == True:
