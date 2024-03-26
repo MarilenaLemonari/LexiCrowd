@@ -6,7 +6,7 @@ CLIPE Workshop Eurographics 2024</br>
 April 2024</strong>
 </div>
 
-![Demo Image]()
+![Demo Image](https://github.com/MarilenaLemonari/LexiCrowd/blob/main/Misc/teaser.png)
 
 <p align="justify">
 Creating believable virtual crowds, controllable by high-level prompts, is essential to creators for trading-off authoring freedom and simulation quality. The flexibility and familiarity of natural language in particular, motivates the use of text to guide the generation process. Capturing the essence of textually described crowd movements in the form of meaningful and usable parameters, is challenging due to the lack of paired ground truth data, and inherent ambiguity between the two modalities. In this work, we leverage a pre-trained Large Language Model (LLM) to create pseudo-pairs of text and behaviour labels. We train a variational auto-encoder (VAE) on the synthetic dataset, constraining the latent space into interpretable behaviour parameters by incorporating a latent label loss. To showcase our model’s capabilities, we deploy a survey where humans provide textual descriptions of real crowd datasets. We demonstrate that our model is able to parameterise unseen sentences
