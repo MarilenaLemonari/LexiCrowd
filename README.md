@@ -16,7 +16,7 @@ and produce novel behaviours, capturing the essence of the given sentence; our b
 <br>
 
 <p align="center"><strong>
-	- <a href="" target="_blank">PDF Paper</a> | <a href="https://youtu.be/xSbMqwq0Mp8" target="_blank">Video</a> -
+	- <a href="https://github.com/MarilenaLemonari/LexiCrowd/blob/main/Misc/CLIPWEG24_paper_4_final.pdf" target="_blank">PDF Paper</a> | <a href="https://youtu.be/xSbMqwq0Mp8" target="_blank">Video</a> -
 </strong>
 </p>
 
